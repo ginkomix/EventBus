@@ -45,22 +45,22 @@ EventBus.prototype.once = function(str, cb) {
 } 
 var eb = new EventBus();
 
-function User(name) {
-    this.get = function(a) {
-
-        alert(a);
-    }
-}
-
-var u1 = new User('misha1');
-var u2= new User('misha2');
-var u3 = new User('misha3');
-var u4 = new User('misha4');
-eb.on('1',u1.get);
-eb.on('1',u2.get);
-eb.on('2',u3.get);
-eb.off('1',u1.get);
-eb.once('1',u1.get);
-eb.trigger('1','misha1');
-
-eb.trigger('1','misha');
+//function User(name) {
+//    this.get = function(a) {
+//
+//        alert(a);
+//    }
+//}
+//
+//var u1 = new User('misha1');
+//var u2= new User('misha2');
+//var u3 = new User('misha3');
+//var u4 = new User('misha4');
+//eb.on('1',u1.get);
+//eb.on('1',u2.get);
+//eb.on('2',u3.get);
+//eb.off('1',u1.get);
+//eb.once('1',u1.get);
+//eb.trigger('1','misha1');
+//
+//eb.trigger('1','misha');
